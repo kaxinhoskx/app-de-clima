@@ -1,0 +1,46 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, sans-serif;
+  min-height: 100vh;
+  display: grid;           /* centraliza o app na tela */
+  place-items: center;
+  background: linear-gradient(135deg, #4facfe, #00c6ff);
+  padding: 16px;
+}
+
+.app {
+  background: white;
+  width: 100%;
+  max-width: 380px;        /* responsivo: ocupa até 380px */
+  padding: 24px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+}
+
+form { display: flex; gap: 8px; margin: 16px 0 8px; }
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #0077ff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover { background: #005fcc; }
+
+#unidade { background: #eee; color: #333; margin-bottom: 12px; }
+
+.temp { font-size: 3rem; font-weight: bold; margin: 8px 0; }
+
+#mensagem { color: #c0392b; min-height: 1.2em; }

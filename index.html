@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App de Clima</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>🌤️ App de Clima</h1>
+
+    <form id="form">
+      <input id="cidade" type="text" placeholder="Digite uma cidade" required>
+      <button type="submit">Buscar</button>
+    </form>
+
+    <button id="unidade" type="button">Mostrar em °F</button>
+    <p id="mensagem"></p>
+
+    <section id="resultado" hidden>
+      <h2 id="nome"></h2>
+      <p id="temp" class="temp"></p>
+      <p id="descricao"></p>
+      <p id="detalhes"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
